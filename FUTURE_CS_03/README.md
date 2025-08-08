@@ -28,7 +28,7 @@ This project implements a secure file upload/download portal to protect files **
 ## 2. 🛠️ Architecture Overview
 
 **Flow Diagram:**  
-```text
+
 User → HTTPS → Flask API → AES Encrypt/Decrypt → Encrypted File Storage
 
 

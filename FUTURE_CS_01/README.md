@@ -125,7 +125,7 @@ SQL injection (SQLi) is a web security vulnerability that allows an attacker to 
 first i tested the login page for a potential sql error with just closing the  syntax | ' and this created the error seen below and this let me know there was an error shown and a possilbe potential for a code injection
 ```
 
-![Alt text](./images/image.png)
+![Alt text](./images/images.png)
 
 ```bash
 In easy mode i ran ( 1' OR '1'='1)

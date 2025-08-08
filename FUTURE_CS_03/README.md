@@ -55,7 +55,9 @@ Keys stored securely in environment variables or secrets manager
 
 IV (initialization vector) stored alongside file metadata
 
+
 ## 3. 🔐 Security Controls Implemented
+ 
 Control Area	Implementation	Purpose
 Encryption at Rest	AES-256-CBC with random IV	Prevent unauthorized access to stored files
 Encryption in Transit	HTTPS/TLS 1.2+ enforced	Prevent eavesdropping and MITM attacks

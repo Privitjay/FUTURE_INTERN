@@ -1,6 +1,6 @@
 # 🛡️ Security Overview Report  
 **Project:** AES-Encrypted File Upload/Download Portal  
-**Author:** Your Name  
+**Author:** Donatus Junior Nwaoyibo 
 **Date:** 2025-08-09  
 
 ---
@@ -30,7 +30,8 @@ This project implements a secure file upload/download portal to protect files **
 **Flow Diagram:**  
 ```text
 User → HTTPS → Flask API → AES Encrypt/Decrypt → Encrypted File Storage
-Main Components:
+
+### Main Components:
 
 Upload Endpoint (/upload)
 

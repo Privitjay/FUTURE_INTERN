@@ -25,8 +25,8 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 ## ⚙️ Tools & Technologies
 | Category            | Tools / Libraries                               |
 |---------------------|------------------------------------------------|
-| Programming         | Python Flask / Node.js (Express)               |
-| Encryption          | PyCryptodome / Node.js Crypto module            |
+| Programming         | Python Flask                                   |
+| Encryption          | PyCryptodome                                   |
 | Version Control     | Git & GitHub                                    |
 | Testing             | Postman / curl                                  |
 | Security Standards  | OWASP Top 10, NIST SP 800-57                     |
@@ -49,7 +49,7 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 
 ### 2. **File Transmission (In Transit)**
 - Enforced **HTTPS** with TLS 1.2+
-- Secure headers using Helmet (Node.js) or Flask-Talisman (Python)
+- Secure headers using   Flask-Talisman (Python)
 - CSRF protection for form submissions
 
 ### 3. **Authentication & Access Control**

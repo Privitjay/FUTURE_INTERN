@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+secret.key
+.env
+uploads/
+filemeta.db

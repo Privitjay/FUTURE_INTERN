@@ -88,11 +88,81 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 
 ---
 
-## 📈 Recommendations for Improvement
-- Integrate HSM (Hardware Security Module) for key storage
-- Implement file expiration policy for sensitive uploads
-- Add automated malware scanning before encryption
-- Deploy intrusion detection for suspicious file activity
+ ## Setup & Usage 
+ 
+markdown
+Copy
+Edit
+# AES-Encrypted File Upload/Download Portal
+
+Local demo implementing AES-GCM encryption for files at rest and HTTPS for transit.
+
+## Quick setup (Linux)
+
+1. Clone repo:
+```bash
+git clone <your-repo-url>
+cd aes-file-portal
+Create virtualenv & install:
+
+bash
+Copy
+Edit
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+Generate secrets:
+
+bash
+Copy
+Edit
+python3 generate_key.py
+# Copy AES_SECRET_KEY and JWT_SECRET output to .env
+Create .env using .env.example and paste values.
+
+Initialize database & demo user:
+
+bash
+Copy
+Edit
+python3 db_init.py
+# creates demo user: demo / password123
+Run the app:
+
+bash
+Copy
+Edit
+python3 app.py
+# App runs at https://localhost:5000 with adhoc TLS
+API Examples (curl)
+Login:
+
+bash
+Copy
+Edit
+curl -k -X POST https://localhost:5000/login -H "Content-Type: application/json" \
+-d '{"username":"demo","password":"password123"}'
+Upload:
+
+bash
+Copy
+Edit
+TOKEN=<token_from_login>
+curl -k -X POST -H "Authorization: Bearer $TOKEN" -F "file=@/path/to/test.txt" \
+https://localhost:5000/upload
+List files:
+
+bash
+Copy
+Edit
+curl -k https://localhost:5000/files
+Download:
+
+bash
+Copy
+Edit
+curl -k -H "Authorization: Bearer $TOKEN" \
+https://localhost:5000/download/<stored_name> -o downloaded_file.txt
 
 ---
 

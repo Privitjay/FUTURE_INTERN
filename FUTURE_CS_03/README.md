@@ -93,9 +93,9 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 markdown
 Copy
 Edit
-# AES-Encrypted File Upload/Download Portal
+## MorningstarClipper-Encrypted File Upload/Download Portal
 
-Local demo implementing AES-GCM encryption for files at rest and HTTPS for transit.
+Local demo implementing Morningstarclipper AES-GCM encryption for files at rest and HTTPS for transit.
 
 ## Quick setup (Linux)
 
@@ -147,7 +147,7 @@ Upload:
 bash
 Copy
 Edit
-TOKEN=<token_from_login>
+Export TOKEN="copy token from the previous step and paste here"
 curl -k -X POST -H "Authorization: Bearer $TOKEN" -F "file=@/path/to/test.txt" \
 https://localhost:5000/upload
 List files:

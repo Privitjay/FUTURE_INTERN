@@ -109,7 +109,7 @@ Local demo implementing Morningstarclipper AES-GCM encryption for files at rest 
 
 1. Clone repo:
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/Privitjay/FUTURE_INTERN/tree/main/FUTURE_CS_03>
 cd morningstarclipper
 Create virtualenv & install:
 
@@ -117,14 +117,15 @@ Create virtualenv & install:
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-Generate secrets:
 
+** Generate secrets:
 
 python3 generate_key.py
 # Copy AES_SECRET_KEY and JWT_SECRET output to .env
+
 Create .env using .env.example and paste values.
 
-Initialize database & demo user:
+** Initialize database & demo user:
 
 
 python3 db_init.py

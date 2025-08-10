@@ -83,6 +83,10 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 
 ## Video Walk Through
 
+Here is a link to a walkthrough video  for the Morningstarclipper aes-encrypted platform
+
+link: https://drive.google.com/file/d/1KW9CWsDNjWsMg7DYS8BC-KMuiJ0GBQQh/view?usp=sharing
+
 
 ## 📌 OWASP Top 10 Mapping
 | OWASP Risk              | Mitigation in Portal                                      |

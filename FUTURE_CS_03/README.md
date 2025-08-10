@@ -128,7 +128,7 @@ python3 db_init.py
 Run the app:
 
 
-python3 app.py
+python3 morningstarclipper.py
 # App runs at https://localhost:5000 with adhoc TLS
 API Examples (curl)
 Login:

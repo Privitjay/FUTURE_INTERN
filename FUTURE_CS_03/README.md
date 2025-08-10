@@ -2,9 +2,11 @@
 
 ## 📋 Project Overview
 **Task:**  
+
 Build a secure file upload/download portal implementing **AES encryption** to protect files **at rest** and **in transit**.
 
 **Objectives:**
+
 - Implement strong encryption (AES-256)
 - Secure file storage and retrieval
 - Protect encryption keys from unauthorized access
@@ -13,6 +15,7 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 ---
 
 ## 🛠 Skills Gained
+
 - Web development (Flask / Express)
 - AES encryption & decryption
 - Secure file handling and validation
@@ -23,6 +26,7 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 ---
 
 ## ⚙️ Tools & Technologies
+
 | Category            | Tools / Libraries                               |
 |---------------------|------------------------------------------------|
 | Programming         | Python Flask                                   |
@@ -38,7 +42,9 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 ---
 
 ## 🛡 Security Implementation
+
 ### 1. **File Encryption (At Rest)**
+
 - AES-256 in **GCM mode** for confidentiality + integrity
 - Unique IV (Initialization Vector) per file
 - Keys stored securely in environment variables or a dedicated KMS (Key Management Service)
@@ -90,9 +96,7 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 
  ## Setup & Usage 
  
-markdown
-Copy
-Edit
+
 ## MorningstarClipper-Encrypted File Upload/Download Portal
 
 Local demo implementing Morningstarclipper AES-GCM encryption for files at rest and HTTPS for transit.
@@ -102,7 +106,7 @@ Local demo implementing Morningstarclipper AES-GCM encryption for files at rest 
 1. Clone repo:
 ```bash
 git clone <your-repo-url>
-cd aes-file-portal
+cd morningstarclipper
 Create virtualenv & install:
 
 
@@ -136,9 +140,11 @@ Upload:
 
 
 Export TOKEN="copy token from the previous step and paste here"
+
 curl -k -X POST -H "Authorization: Bearer $TOKEN" -F "file=@/path/to/test.txt" \
 https://localhost:5000/upload
-List files:
+
+** List files:
 
 
 curl -k https://localhost:5000/files
@@ -151,7 +157,7 @@ https://localhost:5000/download/<stored_name> -o downloaded_file.txt
 ---
 
 ## 📝 Conclusion
-This AES-encrypted file portal ensures **confidentiality**, **integrity**, and **secure access control** for file uploads and downloads.  
+This MorningStarclipper  AES-encrypted file portal ensures **confidentiality**, **integrity**, and **secure access control** for file uploads and downloads.  
 By applying **industry best practices** and aligning with **OWASP Top 10** standards, it minimizes common security risks in file handling applications.
 
 ---

@@ -33,11 +33,7 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 
 ---
 
-## 📂 Deliverables
-- [x] GitHub repository with documented source code
-- [x] Walkthrough video of encryption and file transfer
-- [x] Security overview document
-- [x] Example encrypted files and decryption steps
+
 
 ---
 
@@ -77,6 +73,10 @@ Build a secure file upload/download portal implementing **AES encryption** to pr
 | Man-in-the-middle attack attempt   | Pass ✅ | HTTPS enforced, no plaintext exposure     |
 
 ---
+
+
+## Video Walk Through
+
 
 ## 📌 OWASP Top 10 Mapping
 | OWASP Risk              | Mitigation in Portal                                      |
